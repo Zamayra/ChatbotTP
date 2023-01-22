@@ -216,3 +216,175 @@ stories:
       talk to you next time
     intent: goodbye
   - action: utter_goodbye
+
+- story: change image
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I'm sad
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see a puppy
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      bye bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: change image 2
+  steps:
+  - user: |
+      hey
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not well
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see a koala
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      thank you
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: change image 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not so good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      can you show me a kitten
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_welcome
+  - user: |
+      good bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask another image
+  steps:
+  - user: |
+      hey what's up
+    intent: greet
+  - action: utter_greet
+  - user: |
+      awful
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see another animal
+    intent: ask_another_image
+  - action: action_random_image
+  - user: |
+      no
+    intent: deny
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask another image 2
+  steps:
+  - user: |
+      yo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      Can you show me another animal?
+    intent: ask_another_image
+  - action: action_random_image
+  - user: |
+      yup
+    intent: affirm
+  - user: |
+      thanks
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal
+  steps:
+  - user: |
+      hi there
+    intent: greet
+  - action: utter_greet
+  - - user: |
+        amazing
+      intent: mood_great
+  - action: utter_happy
+  - user: |
+      I'm bored
+    intent: talk_me
+  - action: utter_favorite_animal
+  - user: |
+      cats are my favourite animals
+    intent: favorite_animal
+  - action: action_favorite_animal
+  - user: |
+      thanks
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal 2
+  steps:
+  - user: |
+      good morning
+    intent: greet
+  - action: utter_greet
+  - - user: |
+        feeling like a king
+      intent: mood_great
+  - action: utter_happy
+  - user: |
+      let's chat
+    intent: talk_me
+  - action: utter_favorite_animal
+  - user: |
+      I love dogs
+    intent: favorite_animal
+  - action: action_favorite_animal
+  - user: |
+      thanks a lot
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      bye bye talk to you next time
+    intent: goodbye
+  - action: utter_goodbye
