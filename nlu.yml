@@ -47,7 +47,9 @@ nlu:
     - bye bye, see you next time
     - bye bye, see you later
     - alright, see you
+    - bye bye talk to you next time
     - talk to you next time
+    - talk to you tomorrow
     - talk to you later
 - intent: affirm
   examples: |
@@ -97,12 +99,12 @@ nlu:
     - Im really excited
     - im fine
     - fine
-    - fine thank you
     - good
     - superb
     - super
     - I'm having an amazing day
     - I had an amazing day
+    - cool
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -142,6 +144,7 @@ nlu:
   examples: |
     - thank you
     - thanks
+    - thanks a lot
     - many thanks
     - thx
     - thanks mate
@@ -160,10 +163,11 @@ nlu:
     - My favorite animal is a [puppy](animal)
     - my fav animal is[dog]{"entity": "animal", "value": "puppy"}
     - the [cat]{"entity": "animal", "value": "cat"} is my favorite animal
+    - [cat]{"entity": "animal", "value": "cat"} are my favorite animals
     - [kangaroo](animal) is my favorite animal
-    - I like the [kittis]{"entity": "animal", "value": "cat"}
-    - I love the[horses]{"entity": "animal", "value": "horse"}
-    - I love the [ponnies]{"entity": "animal", "value": "horse"}
+    - I like [kitties]{"entity": "animal", "value": "cat"}
+    - I love [horses]{"entity": "animal", "value": "horse"}
+    - I love [ponies]{"entity": "animal", "value": "horse"}
 - intent: talk_me
   examples: |
     - I would like to talk
@@ -177,8 +181,16 @@ nlu:
 - intent: ask_another_animal
   examples: |
     - I would like to see another animal
+    - I would like to see different animal
+    - I want to see another animal
+    - I want to see different animal
+    - show me another animal
+    - show me a different animal
     - Do you have another animals to show?
     - I want to see another picture
+    - Can you show me another animal?
+    - Can you show me another picture?
+    - another animal
 - synonym: horse
   examples: |
     - horses
@@ -188,16 +200,20 @@ nlu:
 - synonym: puppy
   examples: |
     - dog
+    - dogs
     - man's best friend
     - pup
     - doggy
+    - puppies
 - synonym: cat
   examples: |
     - kitty
     - kitties
     - kitten
+    - kittens
     - meow
     - catty
+    - cats
 - lookup: animal
   examples: |
     - puppy
