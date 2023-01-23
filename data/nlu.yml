@@ -191,6 +191,11 @@ nlu:
     - Can you show me another animal?
     - Can you show me another picture?
     - another animal
+- synonym: horse
+  examples: |
+    - horses
+    - pony
+    - ponies
 - synonym: puppy
   examples: |
     - dog
