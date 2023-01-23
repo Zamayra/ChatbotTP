@@ -1,27 +1,27 @@
 {
   "animal": {
-    "precision": 1.0,
-    "recall": 0.47368421052631576,
-    "f1-score": 0.6428571428571429,
-    "support": 19,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 21,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 1.0,
-    "recall": 0.47368421052631576,
-    "f1-score": 0.6428571428571429,
-    "support": 19
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 21
   },
   "macro avg": {
-    "precision": 1.0,
-    "recall": 0.47368421052631576,
-    "f1-score": 0.6428571428571429,
-    "support": 19
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 21
   },
   "weighted avg": {
-    "precision": 1.0,
-    "recall": 0.47368421052631576,
-    "f1-score": 0.6428571428571429,
-    "support": 19
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 21
   }
 }

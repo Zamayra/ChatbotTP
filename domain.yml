@@ -15,6 +15,7 @@ intents:
 - favorite_animal
 - talk_me
 - action_favorite_animal
+- utter_happy
 entities:
 - animal
 slots:
