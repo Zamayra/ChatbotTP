@@ -118,6 +118,8 @@ nlu:
     - terrible
     - awful
     - depressive
+    - depressed
+    - horrible
     - I am doing not well
     - unhappy
     - not good
@@ -140,6 +142,7 @@ nlu:
     - Are you a bot?
     - are you a human or a bot?
     - who am I talking to?
+    - who are you?
 - intent: thank_you
   examples: |
     - thank you
@@ -148,6 +151,8 @@ nlu:
     - many thanks
     - thx
     - thanks mate
+    - thanks dude
+    - thnaks man
 - intent: change_image
   examples: |
     - I would like to see a [puppy]{"entity": "animal", "value": "puppy"}
@@ -174,18 +179,18 @@ nlu:
   examples: |
     - I would like to talk
     - I want to talk
-    - I want to talk you
     - I want to talk to you
     - I'm bored
+    - I'm bored, let's talk
     - let's talk
     - let's have a chat
     - let's chat
 - intent: ask_another_animal
   examples: |
     - I would like to see another animal
-    - I would like to see different animal
+    - I would like to see a different animal
     - I want to see another animal
-    - I want to see different animal
+    - I want to see a different animal
     - show me another animal
     - show me a different animal
     - Do you have another animals to show?
@@ -198,9 +203,9 @@ nlu:
     - horses
     - pony
     - ponies
-- synonym: puppy
+- synonym: dog
   examples: |
-    - dog
+    - puppy
     - dogs
     - man's best friend
     - pup
@@ -212,12 +217,10 @@ nlu:
     - kitties
     - kitten
     - kittens
-    - meow
-    - catty
     - cats
 - lookup: animal
   examples: |
-    - puppy
+    - dog
     - butterflies
     - kangaroo
     - elephant

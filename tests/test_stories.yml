@@ -231,12 +231,12 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      I want to see a [puppy]{"entity": "animal", "value": "puppy"}
+      I want to see a [puppy]{"entity": "animal", "value": "dog"}
     entities:
-    - animal: puppy
+    - animal: dog
     intent: change_image
   - slot_was_set:
-    - animal: puppy
+    - animal: dog
   - action: action_show_image
   - user: |
       bye bye
@@ -397,12 +397,12 @@ stories:
     intent: talk_me
   - action: utter_favorite_animal
   - user: |
-      I love [dogs]{"entity": "animal", "value": "puppy"}
+      I love [dogs]{"entity": "animal", "value": "dog"}
     entities:
-    - animal: puppy
+    - animal: dog
     intent: favorite_animal
   - slot_was_set:
-    - animal: puppy
+    - animal: dog
   - action: action_favorite_animal
   - user: |
       thanks a lot
