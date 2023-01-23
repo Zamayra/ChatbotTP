@@ -12,7 +12,6 @@ intents:
 - thank_you
 - change_image
 - ask_another_animal
-- ask_another_image
 - favorite_animal
 - utter_happy
 - talk_me

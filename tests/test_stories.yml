@@ -300,7 +300,7 @@ stories:
   - action: utter_did_that_help
   - user: |
       I want to see another animal
-    intent: ask_another_image
+    intent: ask_another_animal
   - action: action_random_image
   - user: |
       no
@@ -324,7 +324,7 @@ stories:
   - action: utter_did_that_help
   - user: |
       Can you show me another animal?
-    intent: ask_another_image
+    intent: ask_another_animal
   - action: action_random_image
   - user: |
       yup
