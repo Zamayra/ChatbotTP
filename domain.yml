@@ -13,7 +13,6 @@ intents:
 - change_image
 - ask_another_animal
 - favorite_animal
-- utter_happy
 - talk_me
 - action_favorite_animal
 entities:
