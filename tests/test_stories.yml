@@ -1,0 +1,393 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+
+- story: bot challenge 1
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: bot challenge 2
+  steps:
+  - user: |
+      are you a human?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: bot challenge 3
+  steps:
+  - user: |
+      am I talking to a bot or a human?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: bot challenge 4
+  steps:
+  - user: |
+      who am I talking to?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: happy 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy 2
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I'm good
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      see you!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy 3
+  steps:
+  - user: |
+      yo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I had an amazing day
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      laters
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy 4
+  steps:
+  - user: |
+      hi mate
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I am doing wonderful
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      talk to you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad 1
+  steps:
+  - user: |
+      hey what's up
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not so good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes it did
+    intent: affirm
+  - action: utter_happy
+  - user: |
+      thanks
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you later
+    intent: goodbye
+  - action: utter_welcome
+
+- story: sad 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_sorry
+  - user: |
+      see you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+     terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yeah
+    intent: affirm
+  - action: utter_happy
+  - user: |
+      see you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad 4
+  steps:
+  - user: |
+      hey what's up
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I had an awful day
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yup
+    intent: affirm
+  - action: utter_happy
+  - user: |
+      thanks mate
+    intent: thank_you
+  - action: utter_welcome
+
+- story: sad 5
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I am not doing well
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      nope
+    intent: deny
+  - action: utter_sorry
+  - user: | 
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye 1
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye 2
+  steps:
+  - user: |
+      see you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye 3
+  steps:
+  - user: |
+      bye bye, see you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: goodbye 4
+  steps:
+  - user: |
+      talk to you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: change image
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      I'm sad
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see a puppy
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      bye bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: change image 2
+  steps:
+  - user: |
+      hey
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not well
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see a koala
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      thank you
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: change image 3
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not so good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      can you show me a kitten
+    intent: change_image
+  - action: action_show_image
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_welcome
+  - user: |
+      good bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask another image
+  steps:
+  - user: |
+      hey what's up
+    intent: greet
+  - action: utter_greet
+  - user: |
+      awful
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      I want to see another animal
+    intent: ask_another_image
+  - action: action_random_image
+  - user: |
+      no
+    intent: deny
+  - action: utter_sorry
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask another image 2
+  steps:
+  - user: |
+      yo
+    intent: greet
+  - action: utter_greet
+  - user: |
+      terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      Can you show me another animal?
+    intent: ask_another_image
+  - action: action_random_image
+  - user: |
+      yup
+    intent: affirm
+  - user: |
+      thanks
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you next time
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal
+  steps:
+  - user: |
+      hi there
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      I'm bored
+    intent: talk_me
+  - action: utter_favorite_animal
+  - user: |
+      cats are my favourite animals
+    intent: favorite_animal
+  - action: action_favorite_animal
+  - user: |
+      thanks
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      talk to you later
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal 2
+  steps:
+  - user: |
+      good morning
+    intent: greet
+  - action: utter_greet
+  - user: |
+      feeling like a king
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      let's chat
+    intent: talk_me
+  - action: utter_favorite_animal
+  - user: |
+      I love dogs
+    intent: favorite_animal
+  - action: action_favorite_animal
+  - user: |
+      thanks a lot
+    intent: thank_you
+  - action: utter_welcome
+  - user: |
+      bye bye talk to you next time
+    intent: goodbye
+  - action: utter_goodbye

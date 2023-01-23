@@ -1,0 +1,14 @@
+[
+  {
+    "text": "my fav animal isdog",
+    "entities": [
+      {
+        "start": 16,
+        "end": 19,
+        "value": "puppy",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

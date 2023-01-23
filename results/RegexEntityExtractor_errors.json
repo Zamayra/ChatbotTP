@@ -1,0 +1,167 @@
+[
+  {
+    "text": "I would like to see the man's best friend",
+    "entities": [
+      {
+        "start": 24,
+        "end": 41,
+        "value": "puppy",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 24,
+        "end": 41,
+        "confidence_entity": 0.5905895233154297,
+        "value": "puppy",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to see a koala",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "koala",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9987803101539612,
+        "value": "koala",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like to see a kitty",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "cat",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.9990078806877136,
+        "value": "cat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want to see a pony",
+    "entities": [
+      {
+        "start": 16,
+        "end": 20,
+        "value": "horse",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.9983121156692505,
+        "value": "horse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I like kitties",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "cat",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9992178678512573,
+        "value": "cat",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I love horses",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "horse",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9986211061477661,
+        "value": "horse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I love ponies",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "horse",
+        "entity": "animal"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "animal",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.9991003274917603,
+        "value": "horse",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

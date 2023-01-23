@@ -43,6 +43,8 @@ responses:
   - text: you are welcome
   utter_favorite_animal:
   - text: what is your favorite animal?
+  utter_sorry:
+  - text: I'm so sorry I can't help you.
 actions:
 - action_show_image
 - action_random_image
