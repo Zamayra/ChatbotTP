@@ -1,1 +1,53 @@
-# None of the test stories failed - all good!
+version: "2.0"
+stories:
+- story: change image (/tmp/tmphsbg3o7q/b0fa43445fb04c8889229fabd8f69d76_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: change_image  # predicted: change_image: I want to see a [puppy](animal)[puppy](animal)
+    entities:
+    - animal: puppy
+  - slot_was_set:
+    - animal: puppy
+  - slot_was_set:
+    - animal: puppy
+  - action: action_show_image
+  - intent: goodbye
+  - action: utter_goodbye
+- story: change image 3 (/tmp/tmphsbg3o7q/b0fa43445fb04c8889229fabd8f69d76_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: change_image
+    entities:
+    - animal: koala
+  - slot_was_set:
+    - animal: koala
+  - slot_was_set:
+    - animal: koala
+  - action: action_show_image
+  - intent: affirm
+  - action: utter_happy  # predicted: action_default_fallback
+  - intent: goodbye
+  - action: utter_goodbye
+- story: ask another image 2 (/tmp/tmphsbg3o7q/b0fa43445fb04c8889229fabd8f69d76_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: ask_another_animal
+  - action: action_random_image
+  - intent: affirm
+  - action: utter_happy  # predicted: action_default_fallback
+  - intent: thank_you
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye

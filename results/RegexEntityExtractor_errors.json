@@ -1,95 +1,5 @@
 [
   {
-    "text": "I would like to see a puppy",
-    "entities": [
-      {
-        "start": 22,
-        "end": 27,
-        "value": "puppy",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 22,
-        "end": 27,
-        "confidence_entity": 0.9990667700767517,
-        "value": "puppy",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I prefer to see a dog",
-    "entities": [
-      {
-        "start": 18,
-        "end": 21,
-        "value": "puppy",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 18,
-        "end": 21,
-        "confidence_entity": 0.9993543028831482,
-        "value": "puppy",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "I would like to see the man's best friend",
-    "entities": [
-      {
-        "start": 24,
-        "end": 41,
-        "value": "puppy",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 24,
-        "end": 41,
-        "confidence_entity": 0.9052886366844177,
-        "value": "puppy",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Do you have any pictures of butterflies",
-    "entities": [
-      {
-        "start": 28,
-        "end": 39,
-        "value": "butterflies",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 28,
-        "end": 39,
-        "confidence_entity": 0.9989153146743774,
-        "value": "butterflies",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
     "text": "I want to see a koala",
     "entities": [
       {
@@ -104,54 +14,9 @@
         "entity": "animal",
         "start": 16,
         "end": 21,
-        "confidence_entity": 0.9993396401405334,
+        "confidence_entity": 0.9994730353355408,
         "value": "koala",
         "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I want to see a horse",
-    "entities": [
-      {
-        "start": 16,
-        "end": 21,
-        "value": "horse",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 16,
-        "end": 21,
-        "confidence_entity": 0.999167799949646,
-        "value": "horse",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I would like to see a kitty",
-    "entities": [
-      {
-        "start": 22,
-        "end": 27,
-        "value": "cat",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 22,
-        "end": 27,
-        "confidence_entity": 0.998451828956604,
-        "value": "cat",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
       }
     ]
   },
@@ -170,33 +35,12 @@
         "entity": "animal",
         "start": 16,
         "end": 20,
-        "confidence_entity": 0.9990444779396057,
+        "confidence_entity": 0.999599039554596,
         "value": "horse",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
-      }
-    ]
-  },
-  {
-    "text": "can you show me a kangaroo",
-    "entities": [
-      {
-        "start": 18,
-        "end": 26,
-        "value": "kangaroo",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 18,
-        "end": 26,
-        "confidence_entity": 0.9994348883628845,
-        "value": "kangaroo",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -215,33 +59,12 @@
         "entity": "animal",
         "start": 18,
         "end": 21,
-        "confidence_entity": 0.999332845211029,
+        "confidence_entity": 0.9994681477546692,
         "value": "puppy",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
-      }
-    ]
-  },
-  {
-    "text": "My favorite animal is a puppy",
-    "entities": [
-      {
-        "start": 24,
-        "end": 29,
-        "value": "puppy",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 24,
-        "end": 29,
-        "confidence_entity": 0.9991163611412048,
-        "value": "puppy",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -260,33 +83,12 @@
         "entity": "animal",
         "start": 17,
         "end": 20,
-        "confidence_entity": 0.9993927478790283,
+        "confidence_entity": 0.9994445443153381,
         "value": "puppy",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
-      }
-    ]
-  },
-  {
-    "text": "the cat is my favorite animal",
-    "entities": [
-      {
-        "start": 4,
-        "end": 7,
-        "value": "cat",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 4,
-        "end": 7,
-        "confidence_entity": 0.998105525970459,
-        "value": "cat",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -305,33 +107,12 @@
         "entity": "animal",
         "start": 0,
         "end": 4,
-        "confidence_entity": 0.9984527826309204,
+        "confidence_entity": 0.9993630051612854,
         "value": "cat",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
-      }
-    ]
-  },
-  {
-    "text": "kangaroo is my favorite animal",
-    "entities": [
-      {
-        "start": 0,
-        "end": 8,
-        "value": "kangaroo",
-        "entity": "animal"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "animal",
-        "start": 0,
-        "end": 8,
-        "confidence_entity": 0.998173713684082,
-        "value": "kangaroo",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -350,7 +131,7 @@
         "entity": "animal",
         "start": 7,
         "end": 14,
-        "confidence_entity": 0.9986955523490906,
+        "confidence_entity": 0.9996157884597778,
         "value": "cat",
         "extractor": "DIETClassifier",
         "processors": [
@@ -374,7 +155,7 @@
         "entity": "animal",
         "start": 7,
         "end": 13,
-        "confidence_entity": 0.9987659454345703,
+        "confidence_entity": 0.9995405673980713,
         "value": "horse",
         "extractor": "DIETClassifier",
         "processors": [
@@ -398,7 +179,7 @@
         "entity": "animal",
         "start": 7,
         "end": 13,
-        "confidence_entity": 0.9990571141242981,
+        "confidence_entity": 0.9996532201766968,
         "value": "horse",
         "extractor": "DIETClassifier",
         "processors": [
