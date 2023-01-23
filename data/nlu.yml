@@ -161,7 +161,7 @@ nlu:
     - Can you show me a [dog]{"entity": "animal", "value": "puppy"}?
 - intent: favorite_animal
   examples: |
-    - My favorite animal is a [puppy]{"entity": "animal", "value": "puppy"}
+    - My favorite animal is a [puppy](animal)
     - my fav animal is [dog]{"entity": "animal", "value": "puppy"}
     - the [cat](animal) is my favorite animal
     - [cats]{"entity": "animal", "value": "cat"} are my favorite animals
