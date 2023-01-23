@@ -6,14 +6,14 @@ intents:
 - goodbye
 - affirm
 - deny
-- mood_great
-- mood_unhappy
+- mood_happy
+- mood_sad
 - bot_challenge
 - thank_you
 - change_image
-- ask_another_animal
+- another_animal
 - favorite_animal
-- talk_me
+- lets_talk
 - action_favorite_animal
 - utter_happy
 entities:
@@ -32,18 +32,18 @@ responses:
   - text: Did that help you?
   - text: Does it help?
   utter_happy:
-  - text: Great, carry on!
+  - text: Fantastic, carry on!
   utter_goodbye:
-  - text: Bye
+  - text: Bye bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_welcome:
-  - text: you are very welcome
-  - text: you are welcome
+  - text: You are welcome
+  - text: You are very welcome
   utter_favorite_animal:
-  - text: what is your favorite animal?
+  - text: What is your favorite animal?
   utter_sorry:
-  - text: I'm so sorry I can't help you.
+  - text: I'm so sorry I could not have helped you.
 actions:
 - action_show_image
 - action_random_image

@@ -39,7 +39,7 @@ stories:
   - action: utter_greet
   - user: |
       amazing
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
 
 - story: happy 2
@@ -50,7 +50,7 @@ stories:
   - action: utter_greet
   - user: |
       I'm good
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
   - user: |
       see you!
@@ -65,7 +65,7 @@ stories:
   - action: utter_greet
   - user: |
       I had an amazing day
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
   - user: |
       laters
@@ -80,7 +80,7 @@ stories:
   - action: utter_greet
   - user: |
       I am doing wonderful
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
   - user: |
       talk to you next time
@@ -95,7 +95,7 @@ stories:
   - action: utter_greet
   - user: |
       not so good
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -119,7 +119,7 @@ stories:
   - action: utter_greet
   - user: |
       not good
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -139,7 +139,7 @@ stories:
   - action: utter_greet
   - user: |
      terrible
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -159,7 +159,7 @@ stories:
   - action: utter_greet
   - user: |
       I had an awful day
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -179,7 +179,7 @@ stories:
   - action: utter_greet
   - user: |
       I am not doing well
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -227,16 +227,16 @@ stories:
   - action: utter_greet
   - user: |
       I'm sad
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      I want to see a [puppy](animal)
+      I want to see a [puppy]{"entity": "animal", "value": "dog"}
     entities:
-    - animal: puppy
+    - animal: dog
     intent: change_image
   - slot_was_set:
-    - animal: puppy
+    - animal: dog
   - action: action_show_image
   - user: |
       bye bye
@@ -251,7 +251,7 @@ stories:
   - action: utter_greet
   - user: |
       not well
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
@@ -279,11 +279,11 @@ stories:
   - action: utter_greet
   - user: |
       not so good
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      can you show me a [koala](animal)
+      can you show me a [koala]{"entity": "animal", "value": "koala"}
     entities:
     - animal: koala
     intent: change_image
@@ -307,12 +307,12 @@ stories:
   - action: utter_greet
   - user: |
       awful
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
       I want to see another animal
-    intent: ask_another_animal
+    intent: another_animal
   - action: action_random_image
   - user: |
       no
@@ -331,12 +331,12 @@ stories:
   - action: utter_greet
   - user: |
       terrible
-    intent: mood_unhappy
+    intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
       Can you show me another animal?
-    intent: ask_another_animal
+    intent: another_animal
   - action: action_random_image
   - user: |
       yup
@@ -359,11 +359,11 @@ stories:
   - action: utter_greet
   - user: |
       amazing
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
   - user: |
       I'm bored
-    intent: talk_me
+    intent: lets_talk
   - action: utter_favorite_animal
   - user: |
       [cats]{"entity": "animal", "value": "cat"} are my favourite animals
@@ -390,19 +390,19 @@ stories:
   - action: utter_greet
   - user: |
       feeling like a king
-    intent: mood_great
+    intent: mood_happy
   - action: utter_happy
   - user: |
       let's chat
-    intent: talk_me
+    intent: lets_talk
   - action: utter_favorite_animal
   - user: |
-      I love [dogs]{"entity": "animal", "value": "puppy"}
+      I love [dogs]{"entity": "animal", "value": "dog"}
     entities:
-    - animal: puppy
+    - animal: dog
     intent: favorite_animal
   - slot_was_set:
-    - animal: puppy
+    - animal: dog
   - action: action_favorite_animal
   - user: |
       thanks a lot

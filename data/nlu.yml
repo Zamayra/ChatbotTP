@@ -74,7 +74,7 @@ nlu:
     - not really
     - no it didn't
     - nope
-- intent: mood_great
+- intent: mood_happy
   examples: |
     - perfect
     - great
@@ -104,7 +104,7 @@ nlu:
     - I'm having an amazing day
     - I had an amazing day
     - cool
-- intent: mood_unhappy
+- intent: mood_sad
   examples: |
     - my day was horrible
     - I am sad
@@ -117,6 +117,8 @@ nlu:
     - terrible
     - awful
     - depressive
+    - depressed
+    - horrible
     - I am doing not well
     - unhappy
     - not good
@@ -139,6 +141,7 @@ nlu:
     - Are you a bot?
     - are you a human or a bot?
     - who am I talking to?
+    - who are you?
 - intent: thank_you
   examples: |
     - thank you
@@ -147,6 +150,8 @@ nlu:
     - many thanks
     - thx
     - thanks mate
+    - thanks dude
+    - thanks man
 - intent: change_image
   examples: |
     - I would like to see a [puppy](animal)
@@ -169,22 +174,22 @@ nlu:
     - I like [kitties]{"entity": "animal", "value": "cat"}
     - I love [horses]{"entity": "animal", "value": "horse"}
     - I love [ponies]{"entity": "animal", "value": "horse"}
-- intent: talk_me
+- intent: lets_talk
   examples: |
     - I would like to talk
     - I want to talk
-    - I want to talk you
     - I want to talk to you
     - I'm bored
+    - I'm bored, let's talk
     - let's talk
     - let's have a chat
     - let's chat
-- intent: ask_another_animal
+- intent: another_animal
   examples: |
     - I would like to see another animal
-    - I would like to see different animal
+    - I would like to see a different animal
     - I want to see another animal
-    - I want to see different animal
+    - I want to see a different animal
     - show me another animal
     - show me a different animal
     - Do you have another animals to show?
@@ -197,9 +202,9 @@ nlu:
     - horses
     - pony
     - ponies
-- synonym: puppy
+- synonym: dog
   examples: |
-    - dog
+    - puppy
     - dogs
     - pup
     - doggy
@@ -210,12 +215,10 @@ nlu:
     - kitties
     - kitten
     - kittens
-    - meow
-    - catty
     - cats
 - lookup: animal
   examples: |
-    - puppy
+    - dog
     - butterflies
     - kangaroo
     - elephant
