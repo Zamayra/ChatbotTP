@@ -38,8 +38,9 @@ nlu:
     - see you later
     - ok, have a good evening
     - laters
-    - alright, bye
+    - alright, bye 
     - see you tomorrow
+    - see you around
     - see you next time
     - See you next time, bye bye
     - bye bye, see you next time
@@ -199,22 +200,28 @@ nlu:
 - synonym: puppy
   examples: |
     - dog
-    - man's best friend
     - dogs
+    - man's best friend
     - pup
     - doggy
     - puppies
 - synonym: cat
   examples: |
     - kitty
-    - cats
     - kitties
     - kitten
     - kittens
     - meow
     - catty
-- synonym: horse
+    - cats
+- lookup: animal
   examples: |
-    - pony
-    - horses
-    - ponies
+    - puppy
+    - butterflies
+    - kangaroo
+    - elephant
+    - turtle
+    - giraffe
+    - panda
+    - cat
+    - horse
