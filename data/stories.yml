@@ -95,7 +95,7 @@ stories:
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: ask_another_animal
+  - intent: another_animal
   - action: action_random_image
   - intent: deny
   - action: utter_sorry

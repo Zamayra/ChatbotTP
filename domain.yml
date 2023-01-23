@@ -11,7 +11,7 @@ intents:
 - bot_challenge
 - thank_you
 - change_image
-- ask_another_animal
+- another_animal
 - favorite_animal
 - talk_me
 - action_favorite_animal

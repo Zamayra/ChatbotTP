@@ -152,7 +152,7 @@ nlu:
     - thx
     - thanks mate
     - thanks dude
-    - thnaks man
+    - thanks man
 - intent: change_image
   examples: |
     - I would like to see a [puppy]{"entity": "animal", "value": "puppy"}
@@ -185,7 +185,7 @@ nlu:
     - let's talk
     - let's have a chat
     - let's chat
-- intent: ask_another_animal
+- intent: another_animal
   examples: |
     - I would like to see another animal
     - I would like to see a different animal
