@@ -178,40 +178,6 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: ask favorite animal 3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_sorry
-  - intent: talk_me
-  - action: utter_favorite_animal
-  - intent: favorite_animal
-    entities:
-    - animal: butterflies
-  - slot_was_set:
-    - animal: butterflies
-  - action: action_favorite_animal
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: ask favorite animal 4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_sorry
-  - intent: talk_me
-  - action: utter_favorite_animal
-  - intent: favorite_animal
-    entities:
-    - animal: puppy
-  - slot_was_set:
-    - animal: puppy
-  - action: action_favorite_animal
-  - intent: goodbye
-  - action: utter_goodbye
-
 - story: ask favorite animal 4 synonym
   steps:
   - intent: greet
@@ -269,22 +235,6 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: ask favorite animal 5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_sorry
-  - intent: talk_me
-  - action: utter_favorite_animal
-  - intent: favorite_animal
-    entities:
-    - animal: horse
-  - slot_was_set:
-    - animal: horses
-  - action: action_favorite_animal
-  - intent: goodbye
-  - action: utter_goodbye
 
 - story: ask favorite animal 5 synonym
   steps:
