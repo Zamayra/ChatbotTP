@@ -196,7 +196,6 @@ nlu:
 - synonym: horse
   examples: |
     - horses
-    - horse
     - pony
     - ponies
 - synonym: puppy
