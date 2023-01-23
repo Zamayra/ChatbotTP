@@ -370,8 +370,8 @@ stories:
     entities:
     - animal: cat
     intent: favorite_animal
-  - slot_was_set
-    - animal : cat
+  - slot_was_set:
+    - animal: cat
   - action: action_favorite_animal
   - user: |
       thanks
@@ -401,7 +401,7 @@ stories:
     entities:
     - animal: puppy
     intent: favorite_animal
-  - slot_was_set
+  - slot_was_set:
     - animal: puppy
   - action: action_favorite_animal
   - user: |
