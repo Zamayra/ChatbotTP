@@ -149,22 +149,22 @@ nlu:
     - thanks mate
 - intent: change_image
   examples: |
-    - I would like to see a [puppy]{"entity": "animal", "value": "puppy"}
-    - I prefer to see a [turtle]{"entity": "animal", "value": "puppy"}
-    - Do you have any pictures of [butterflies]{"entity": "animal", "value": "butterflies"}
-    - I want to see a [koala]{"entity": "animal", "value": "koala"}
-    - I want to see a [horse]{"entity": "animal", "value": "horse"}
-    - I would like to see a [cat]{"entity": "animal", "value": "cat"}
+    - I would like to see a [puppy](animal)
+    - I prefer to see a [turtle](animal)
+    - Do you have any pictures of [butterflies](animal)
+    - I want to see a [koala](animal)
+    - I want to see a [horse](animal)
+    - I would like to see a [cat](animal)
     - I want to see a [pony]{"entity": "animal", "value": "horse"}
-    - can you show me a [kangaroo]{"entity": "animal", "value": "kangaroo"}
+    - can you show me a [kangaroo](animal)
     - Can you show me a [dog]{"entity": "animal", "value": "puppy"}?
 - intent: favorite_animal
   examples: |
     - My favorite animal is a [puppy]{"entity": "animal", "value": "puppy"}
     - my fav animal is [dog]{"entity": "animal", "value": "puppy"}
-    - the [cat]{"entity": "animal", "value": "cat"} is my favorite animal
+    - the [cat](animal)is my favorite animal
     - [cats]{"entity": "animal", "value": "cat"} are my favorite animals
-    - [kangaroo]{"entity": "animal", "value": "kangaroo"} is my favorite animal
+    - [kangaroo](animal) is my favorite animal
     - I like [kitties]{"entity": "animal", "value": "cat"}
     - I love [horses]{"entity": "animal", "value": "horse"}
     - I love [ponies]{"entity": "animal", "value": "horse"}
