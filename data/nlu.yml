@@ -153,6 +153,7 @@ nlu:
     - I prefer to see a [turtle](animal)
     - Do you have any pictures of [butterflies](animal)
     - I want to see a [koala](animal)
+    - I want to see a [puppy](animal)
     - I want to see a [horse](animal)
     - I would like to see a [cat](animal)
     - I want to see a [pony]{"entity": "animal", "value": "horse"}
@@ -162,7 +163,7 @@ nlu:
   examples: |
     - My favorite animal is a [puppy]{"entity": "animal", "value": "puppy"}
     - my fav animal is [dog]{"entity": "animal", "value": "puppy"}
-    - the [cat](animal)is my favorite animal
+    - the [cat](animal) is my favorite animal
     - [cats]{"entity": "animal", "value": "cat"} are my favorite animals
     - [kangaroo](animal) is my favorite animal
     - I like [kitties]{"entity": "animal", "value": "cat"}
