@@ -75,7 +75,7 @@ nlu:
     - not really
     - no it didn't
     - nope
-- intent: mood_great
+- intent: mood_happy
   examples: |
     - perfect
     - great
@@ -105,7 +105,7 @@ nlu:
     - I'm having an amazing day
     - I had an amazing day
     - cool
-- intent: mood_unhappy
+- intent: mood_sad
   examples: |
     - my day was horrible
     - I am sad
@@ -175,7 +175,7 @@ nlu:
     - I like [kitties]{"entity": "animal", "value": "cat"}
     - I love [horses]{"entity": "animal", "value": "horse"}
     - I love [ponies]{"entity": "animal", "value": "horse"}
-- intent: talk_me
+- intent: lets_talk
   examples: |
     - I would like to talk
     - I want to talk

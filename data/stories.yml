@@ -76,7 +76,7 @@ stories:
   steps:
     - intent: greet
     - action: utter_greet
-    - intent: mood_unhappy
+    - intent: mood_sad
     - action: utter_cheer_up
     - action: utter_did_that_help
     - intent: change_image
@@ -92,7 +92,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: another_animal
@@ -106,9 +106,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -125,9 +125,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -144,9 +144,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -163,9 +163,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -182,9 +182,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_sad
   - action: utter_sorry
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -199,9 +199,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_sad
   - action: utter_sorry
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -216,9 +216,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -235,9 +235,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -254,9 +254,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -273,9 +273,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_sad
   - action: utter_sorry
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -290,9 +290,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: favorite_animal
     entities:
@@ -309,9 +309,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: action_favorite_animal
     entities:
@@ -328,9 +328,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
-  - intent: talk_me
+  - intent: lets_talk
   - action: utter_favorite_animal
   - intent: action_favorite_animal
     entities:
@@ -346,7 +346,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
   - intent: thank_you
   - action: utter_welcome
@@ -356,7 +356,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_sad
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: change_image
