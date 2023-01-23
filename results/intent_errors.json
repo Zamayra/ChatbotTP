@@ -1,15 +1,15 @@
 [
   {
-    "text": "good afternoon",
-    "intent": "greet",
+    "text": "I'm bored",
+    "intent": "talk_me",
     "intent_prediction": {
       "name": "nlu_fallback",
       "confidence": 1.0
     }
   },
   {
-    "text": "good afternoon",
-    "intent": "goodbye",
+    "text": "let's have a chat",
+    "intent": "talk_me",
     "intent_prediction": {
       "name": "nlu_fallback",
       "confidence": 1.0
