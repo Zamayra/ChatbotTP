@@ -17,16 +17,13 @@ nlu:
     - yo
     - what's up
     - yo what's up
-    - goodmorning
-    - goodevening
-    - goodafternoon
 - intent: goodbye
   examples: |
+    - have a good one
     - have a good evening
     - have a good afternoon
     - cu
     - good bye
-    - cee you later
     - good night
     - bye
     - goodbye
@@ -63,6 +60,7 @@ nlu:
     - yas
     - ok
     - yes it did
+    - yes is has
 - intent: deny
   examples: |
     - no
@@ -73,6 +71,7 @@ nlu:
     - no way
     - not really
     - no it didn't
+    - no it hasn't
     - nope
 - intent: mood_happy
   examples: |
@@ -90,10 +89,6 @@ nlu:
     - I am going to save the world
     - super stoked
     - extremely good
-    - so so perfect
-    - so good
-    - so so good
-    - so perfect
     - I'm very very good
     - Im really excited
     - im fine
