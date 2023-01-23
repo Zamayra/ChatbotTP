@@ -231,7 +231,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      I want to see a [puppy]{"entity": "animal", "value": "puppy"}
+      I want to see a [puppy](animal)
     entities:
     - animal: puppy
     intent: change_image
@@ -283,7 +283,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      can you show me a [koala]{"entity": "animal", "value": "koala"}
+      can you show me a [koala](animal)
     entities:
     - animal: koala
     intent: change_image
