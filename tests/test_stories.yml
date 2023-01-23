@@ -109,7 +109,7 @@ stories:
   - user: |
       talk to you later
     intent: goodbye
-  - action: utter_welcome
+  - action: utter_goodbye
 
 - story: sad 2
   steps:
@@ -232,7 +232,11 @@ stories:
   - action: utter_did_that_help
   - user: |
       I want to see a puppy
+    entities:
+    - animal: koala
     intent: change_image
+  - slot_was_set:
+    - animal: koala
   - action: action_show_image
   - user: |
       bye bye
@@ -252,7 +256,11 @@ stories:
   - action: utter_did_that_help
   - user: |
       I want to see a koala
+    entities:
+    - animal: koala
     intent: change_image
+  - slot_was_set:
+    - animal: koala
   - action: action_show_image
   - user: |
       thank you
@@ -276,12 +284,16 @@ stories:
   - action: utter_did_that_help
   - user: |
       can you show me a kitten
+    entities:
+    - animal: koala
     intent: change_image
+  - slot_was_set:
+    - animal: koala
   - action: action_show_image
   - user: |
       yes
     intent: affirm
-  - action: utter_welcome
+  - action: utter_happy
   - user: |
       good bye
     intent: goodbye
@@ -329,6 +341,7 @@ stories:
   - user: |
       yup
     intent: affirm
+  - action: utter_happy
   - user: |
       thanks
     intent: thank_you
@@ -354,7 +367,11 @@ stories:
   - action: utter_favorite_animal
   - user: |
       cats are my favourite animals
+    entities:
+    - animal: cat
     intent: favorite_animal
+  - slot_was_set
+    - animal : cat
   - action: action_favorite_animal
   - user: |
       thanks
@@ -381,7 +398,11 @@ stories:
   - action: utter_favorite_animal
   - user: |
       I love dogs
+    entities:
+    - animal: puppy
     intent: favorite_animal
+  - slot_was_set
+    - animal: puppy
   - action: action_favorite_animal
   - user: |
       thanks a lot

@@ -83,7 +83,7 @@ stories:
     - intent: goodbye
     - action: utter_goodbye
 
-- story: ask another image
+- story: ask another animal
   steps:
   - intent: greet
   - action: utter_greet

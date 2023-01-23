@@ -158,6 +158,8 @@ nlu:
     - I want to see a [horse](animal)
     - I would like to see a [kitty]{"entity": "animal", "value": "cat"}
     - I want to see a [pony]{"entity": "animal", "value": "horse"}
+    - can you show me a [puppy](animal)
+    - Caan you show me a [dog](animal)?
 - intent: favorite_animal
   examples: |
     - My favorite animal is a [puppy](animal)
@@ -224,5 +226,4 @@ nlu:
     - giraffe
     - panda
     - cat
-    - dog
     - horse
