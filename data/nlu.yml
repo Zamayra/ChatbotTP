@@ -16,7 +16,6 @@ nlu:
     - hi mate
     - yo
     - what's up
-    - hey what's up
     - yo what's up
     - goodmorning
     - goodevening
@@ -39,9 +38,8 @@ nlu:
     - see you later
     - ok, have a good evening
     - laters
-    - alright, bye 
+    - alright, bye
     - see you tomorrow
-    - see you around
     - see you next time
     - See you next time, bye bye
     - bye bye, see you next time
@@ -193,37 +191,25 @@ nlu:
     - Can you show me another animal?
     - Can you show me another picture?
     - another animal
-- synonym: horse
-  examples: |
-    - horses
-    - horse
-    - pony
-    - ponies
 - synonym: puppy
   examples: |
     - dog
-    - dogs
     - man's best friend
+    - dogs
     - pup
     - doggy
     - puppies
 - synonym: cat
   examples: |
     - kitty
+    - cats
     - kitties
     - kitten
     - kittens
     - meow
     - catty
-    - cats
-- lookup: animal
+- synonym: horse
   examples: |
-    - puppy
-    - butterflies
-    - kangaroo
-    - elephant
-    - turtle
-    - giraffe
-    - panda
-    - cat
-    - horse
+    - pony
+    - horses
+    - ponies
