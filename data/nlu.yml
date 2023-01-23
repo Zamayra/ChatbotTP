@@ -151,12 +151,12 @@ nlu:
 - intent: change_image
   examples: |
     - I would like to see a [puppy]{"entity": "animal", "value": "puppy"}
-    - I prefer to see a [dog]{"entity": "animal", "value": "puppy"}
+    - I prefer to see a [turtle]{"entity": "animal", "value": "puppy"}
     - I would like to see the [man's best friend]{"entity": "animal", "value": "puppy"}
     - Do you have any pictures of [butterflies]{"entity": "animal", "value": "butterflies"}
     - I want to see a [koala]{"entity": "animal", "value": "koala"}
     - I want to see a [horse]{"entity": "animal", "value": "horse"}
-    - I would like to see a [kitty]{"entity": "animal", "value": "cat"}
+    - I would like to see a [cat]{"entity": "animal", "value": "cat"}
     - I want to see a [pony]{"entity": "animal", "value": "horse"}
     - can you show me a [kangaroo]{"entity": "animal", "value": "kangaroo"}
     - Can you show me a [dog]{"entity": "animal", "value": "puppy"}?
