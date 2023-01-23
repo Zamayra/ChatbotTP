@@ -8,6 +8,8 @@ stories:
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: sad path 1
   steps:
@@ -19,6 +21,7 @@ stories:
   - intent: affirm
   - action: utter_happy
 
+
 - story: sad path 2
   steps:
   - intent: greet
@@ -28,6 +31,8 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_sorry
+  - intent: goodbye
+  - action: utter_goodbye
 
 - story: sad path 3
   steps:
@@ -128,7 +133,7 @@ stories:
     entities:
     - animal: cat
   - slot_was_set:
-    - animal: kitty
+    - animal: cat
   - action: action_favorite_animal
   - intent: thank_you
   - action: utter_welcome
