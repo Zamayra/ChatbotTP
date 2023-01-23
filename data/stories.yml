@@ -113,6 +113,44 @@ stories:
   - action: action_favorite_animal
   - intent: thank_you
   - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: talk_me
+  - action: utter_favorite_animal
+  - intent: favorite_animal
+    entities:
+    - animal: kangaroo
+  - slot_was_set:
+    - animal: kangaroo
+  - action: action_favorite_animal
+  - intent: thank_you
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask favorite animal 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_sorry
+  - intent: talk_me
+  - action: utter_favorite_animal
+  - intent: favorite_animal
+    entities:
+    - animal: butterflies
+  - slot_was_set:
+    - animal: butterflies
+  - action: action_favorite_animal
+  - intent: goodbye
+  - action: utter_goodbye
   
 - story: Story from Conversation ID d86f1bf70f604bb0873c09a8f91158d7
   steps:
