@@ -231,12 +231,12 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      I want to see a puppy
+      I want to see a [puppy]{"entity": "animal", "value": "puppy"}
     entities:
-    - animal: koala
+    - animal: puppy
     intent: change_image
   - slot_was_set:
-    - animal: koala
+    - animal: puppy
   - action: action_show_image
   - user: |
       bye bye
@@ -255,12 +255,12 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      I want to see a koala
+      I want to see a [kitten]{"entity": "animal", "value": "cat"}
     entities:
-    - animal: koala
+    - animal: cat
     intent: change_image
   - slot_was_set:
-    - animal: koala
+    - animal: cat
   - action: action_show_image
   - user: |
       thank you
@@ -283,7 +283,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      can you show me a kitten
+      can you show me a [koala]{"entity": "animal", "value": "koala"}
     entities:
     - animal: koala
     intent: change_image
@@ -366,7 +366,7 @@ stories:
     intent: talk_me
   - action: utter_favorite_animal
   - user: |
-      cats are my favourite animals
+      [cats]{"entity": "animal", "value": "cat"} are my favourite animals
     entities:
     - animal: cat
     intent: favorite_animal
@@ -397,7 +397,7 @@ stories:
     intent: talk_me
   - action: utter_favorite_animal
   - user: |
-      I love dogs
+      I love [dogs]{"entity": "animal", "value": "puppy"}
     entities:
     - animal: puppy
     intent: favorite_animal
