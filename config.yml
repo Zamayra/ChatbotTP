@@ -23,7 +23,7 @@ pipeline:
      ambiguity_threshold: 0.1
    - name: RegexEntityExtractor
      use_lookup_table: True
-  - name: EntitySynonymMapper
+   - name: EntitySynonymMapper
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
