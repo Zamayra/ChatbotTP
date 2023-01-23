@@ -20,6 +20,8 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
 
 
 - story: sad path 2
